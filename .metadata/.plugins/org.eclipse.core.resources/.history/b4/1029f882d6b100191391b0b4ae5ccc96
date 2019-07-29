@@ -1,0 +1,13 @@
+#include "device_driver.h"
+#include "2440addr.h"
+#include <stdlib.h>
+
+// out
+#define printf 	Uart_Printf
+
+// colour
+#define BLACK	0x0000
+#define WHITE	0xfffe
+#define BLUE	0x003e
+#define GREEN	0x07c0
+#define RED		0xf800

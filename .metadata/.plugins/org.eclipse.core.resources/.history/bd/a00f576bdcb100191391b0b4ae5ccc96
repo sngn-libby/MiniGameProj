@@ -1,0 +1,3 @@
+#include "myImage.h"
+
+const unsigned short * Man[] = {man_01,man_04};

@@ -1,0 +1,270 @@
+/***********************************************************/
+// 다음은 사용자 함수를 호출하는 루틴임 지우지 말것!
+/***********************************************************/
+#if 01
+
+#include <stdlib.h>
+#include "device_driver.h"
+#include "2440addr.h"
+//#include "myCharacter.c"
+
+// out
+#define printf 	Uart_Printf
+
+// colour
+#define BLACK	0x0000
+#define WHITE	0xfffe
+#define BLUE	0x003e
+#define GREEN	0x07c0
+#define RED		0xf800
+
+#define BACK_COLOR 	BLACK
+#define WIDTH 		320
+#define HEIGHT 		240
+
+unsigned short make_pixel(int r, int g, int b)
+{
+	return (r>>3)<<11 | (g>>3)<<6 | (b>>3) << 1 ;
+}
+
+
+typedef struct
+{
+	int day;
+	int year;
+	int mon;
+	int date;
+	int hour;
+	int min;
+	int sec;
+}RTC_TIME;
+
+int RTC_Get_Time(void)
+{
+	RTC_TIME a;
+	/*
+	a.day = (int)rBCDDAY;
+	a.year = (int)rBCDYEAR;
+	a.mon = (int)rBCDMON;
+	a.date = (int)rBCDDATE;
+	a.hour = (int)rBCDHOUR;
+	a.min = (int)rBCDMIN;
+	a.sec = (int)rBCDSEC;
+
+	if(!a.sec)
+	{
+		a.day = (int)rBCDDAY;
+		a.year = (int)rBCDYEAR;
+		a.mon = (int)rBCDMON;
+		a.date = (int)rBCDDATE;
+		a.hour = (int)rBCDHOUR;
+		a.min = (int)rBCDMIN;
+	}
+
+	time->day = a.day;
+	time->year = ((a.year >> 4) & 0xf) * 10 + (a.year & 0xf);
+	time->mon = ((a.mon >> 4) & 0xf) * 10 + (a.mon & 0xf);
+	time->date = ((a.date >> 4) & 0xf) * 10 + (a.date & 0xf);
+	time->hour = ((a.hour >> 4) & 0xf) * 10 + (a.hour & 0xf);
+	time->min = ((a.min >> 4) & 0xf) * 10 + (a.min & 0xf);
+	time->sec = ((a.sec >> 4) & 0xf) * 10 + (a.sec & 0xf);
+	*/
+	a.hour = (int)rBCDHOUR;
+	a.min = (int)rBCDMIN;
+	a.sec = (int)rBCDSEC;
+	return  ((a.hour >> 4) & 0xf) * 10 + (a.hour & 0xf) * 360 + \
+			((a.min >> 4) & 0xf) * 10 + (a.min & 0xf) * 60 + \
+			((a.sec >> 4) & 0xf) * 10 + (a.sec & 0xf);
+
+}
+
+
+void Game_Init(void);
+void Character_load(void);
+void Character_move(void);
+void explosion(void);
+
+void Main(void)
+{
+
+	MMU_Init();
+	Led_Init();
+	Key_Poll_Init();
+	Uart_Init(115200);
+	Timer0_Init();
+	Timer3_Buzzer_Init();
+	Timer4_Init();
+	Lcd_Graphic_Init();
+	Lcd_Clr_Screen(0x0000);
+
+	Uart_Printf("Welcome Zombie Escape Game\n");
+	Character_load();
+
+
+}
+
+#include "./Image/man_01.h"
+#include "./Image/man_04.h"
+
+const unsigned short * Man[] = {man_01,man_04};
+
+
+/*
+struct Object
+{
+	int timer;
+	int move_flag;
+	int pos[2];
+	int pos_init[2];
+	int pos_back[2];
+	int size[2];
+	unsigned short color;
+	int speed_step;
+	int move_step;
+	int beam_flag;
+	int cd_flag;
+};
+
+struct Object Ufo = {0,1,{0,10},{0,10},{0,10},{30,10},RED, 3, 8, 0, 0};
+struct Object Gun = {0,1,{160,300},{160,300},{160,300},{30,30},BLUE, 4, 7, 0, 0};
+struct Object Ufo_beam = {0,1,{319,239},{319,239},{319,239},{10,10},GREEN, 3, 10, 0, 0};
+*/
+
+
+void Game_Init(void)
+{
+	Lcd_Clr_Screen(BACK_COLOR);
+	Timer0_Repeat(20);
+}
+
+void Character_load(void)
+{
+
+	int i;
+	int xtmp, ytmp;
+
+	Uart_Printf("\n그래픽 기본 함수 실습\n");
+	Uart_Printf("키보드 누를때마다 다음단계로 진행\n");
+
+	while(!Key_Get_Pressed());
+	Uart_Printf("1\n");
+
+	Uart_Printf("Clear Screen\n");
+	Lcd_Clr_Screen(BLACK);
+
+	while(!Key_Get_Pressed());
+	Uart_Printf("2\n");
+
+	// 캐릭터 불러오기
+	Lcd_Get_Info_BMP(&xtmp, &ytmp, man_04);
+	Uart_Printf("X=[%d], Y=[%d]\n", xtmp, ytmp);
+	Lcd_Draw_BMP((160-(xtmp/2)), (120-(ytmp/2)), man_04);
+	Timer4_Delay(1000);
+
+//	for(i=0; i<(sizeof(Man)/sizeof(Man[1])); i++)
+//	{
+//		Lcd_Get_Info_BMP(&xtmp, &ytmp, Man[1]); // 그림크기설정
+//		Uart_Printf("X=[%d], Y=[%d]\n", xtmp, ytmp);
+//		Lcd_Draw_BMP((160-(xtmp/2)), (120-(ytmp/2)), Man[]); // 불러올 위치 설정
+//		Timer4_Delay(1000);
+//	}
+
+	Uart_Printf("키보드 누르면 종료\n");
+	while(!Key_Get_Pressed());
+	Uart_Printf("end\n");
+}
+
+typedef struct str{
+	int x, y;
+}POS;
+typedef struct str{
+	int w, h;
+}SIZE;
+
+// monster 만들기
+struct Object
+{
+	int timer;
+	int move_flag;
+
+	POS pos;
+	POS pos_init;
+	POS pos_back;
+	SIZE size;
+	unsigned short color;
+	int speed_step;
+	int move_step;
+	int attack_flag;
+};
+
+void Character_move(void)
+{
+	int key = 0;
+	if(Timer0_Check_Expired())
+	{
+
+	}
+}
+
+/*
+void Character_move(void)
+{
+	int key = 0;
+	if(Timer0_Check_Expired())
+	{
+		Ufo.timer++;
+		Gun.timer++;
+		Ufo_beam.timer++;
+
+		key = Key_Get_Pressed();
+
+		if(Ufo.timer >= Ufo.speed_step)
+		{
+			Ufo.timer = 0;
+			Ufo.pos_back[0] = Ufo.pos[0];
+			Ufo.pos[0] = Ufo.pos[0] + Ufo.move_step;
+			Ufo.move_flag = 1;
+		}
+
+		if(Gun.timer >= Gun.speed_step)
+		{
+			Gun.timer = 0;
+			Gun.pos_back[1] = Gun.pos[1];
+			Gun.pos[1] = Gun.pos[1] - Gun.move_step;
+			Gun.move_flag = 1;
+		}
+		if(key == 5)
+		{
+			if(Ufo_beam.beam_flag == 0)
+			{
+				Ufo_beam.beam_flag = 1;
+			}
+		}
+		if(Ufo_beam.beam_flag == 0)
+		{
+			Ufo_beam.pos_init[0] = Ufo.pos[0]+13;
+			Ufo_beam.pos_init[1] = Ufo.pos[1]+12;
+			Ufo_beam.pos_back[0] = Ufo_beam.pos_init[0];
+			Ufo_beam.pos_back[1] = Ufo_beam.pos_init[1];
+			Ufo_beam.pos[0] = Ufo_beam.pos_init[0];
+			Ufo_beam.pos[1] = Ufo_beam.pos_init[1];
+		}
+		if(Ufo_beam.beam_flag != 0 && Ufo_beam.timer >= Ufo_beam.speed_step)
+		{
+			Ufo_beam.timer = 0;
+			Ufo_beam.pos_back[1] = Ufo_beam.pos[1];
+			Ufo_beam.pos[1] = Ufo_beam.pos[1] + Ufo_beam.move_step;
+			Ufo_beam.move_flag = 1;
+		}
+	}
+}
+*/
+
+void explosion(void)
+{
+
+}
+
+#endif
+
+

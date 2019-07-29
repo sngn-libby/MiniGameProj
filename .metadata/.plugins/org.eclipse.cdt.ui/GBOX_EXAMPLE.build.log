@@ -1,0 +1,11 @@
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Monster_move':
+Main.c:316: warning: unused variable 'key'
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
