@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="XSIZE" key="selection"/>
+		<item value="man_04" key="selection"/>
 		<list key="findhistory">
-			<item value="XSIZE"/>
-			<item value="Selected_frame"/>
-			<item value="Lcd_Set_Address"/>
+			<item value="man_04"/>
+			<item value="user"/>
+			<item value="main"/>
+			<item value="Graphic_init"/>
+			<item value="Virtual_Display"/>
+			<item value="AREA_FLAG"/>
 			<item value="LCD_SIZE"/>
-			<item value="LCD_FB0"/>
-			<item value="LCD_XSIZE"/>
-			<item value="Virtual"/>
-			<item value="Map"/>
+			<item value="map_pos"/>
 		</list>
 		<list key="replacehistory">
 		</list>

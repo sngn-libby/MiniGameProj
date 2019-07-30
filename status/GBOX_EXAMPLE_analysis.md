@@ -100,7 +100,7 @@
     - 조합하면 더해져서 나옴
 
   - Key_Wait_Key_Released_Multi(); 키가 release될 때까지 다른 키입력을 받지 않는다.
-      
+    
 
 - void **Timer_Test**(void)
 
@@ -150,59 +150,66 @@
 
     ============================================================
 
-    
+
+​    
 
     void Timer0_Repeat(int time)
-
+    
     - 시간을 밀리초 단위로 체크
-
+    
     - 1.3초를 넘어가면 문제 발생
 
 
     void Timer0_Change_Delay(int msec)
-
+    
     - 타이머 딜레이를 바꾸어줌
     - rTCNTB0: 타이머 반복 단위를 바꾸어줌
       rTCMPB0: 
 
-    
+
+​    
 
     int Timer0_Check_Expired(void)
-
+    
     - 타이머 반복 단위가 될 때마다 1 리턴, 그 외에는 0 리턴
 
-    
 
-    
+​    
+
+​    
 
     void Timer0_Stop(void)
-
+    
     - 타이머 종료
-
+    
     -----------------------------------------------------------
-
+    
     void Timer0_ISR_Enable(int en) // 토글된다.
-
+    
     ===========================================================
 
-    
+
+​    
 
     void Timer1_Stopwatch_Run(void)
-
+    
     - 0부터 시작해서 증가
 
-    
+
+​    
 
     int Timer1_Stopwatch_Stop(void)
-
+    
     - 100만분의 일초 단위로 리턴
 
-    
+
+​    
 
     ===========================================================
 
-    
+
+​    
 
     void Timer4_Delay(unsigned int msec)
-
+    
     - ms단위로 전체 프로그램 일시정지
