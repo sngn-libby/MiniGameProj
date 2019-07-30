@@ -35,8 +35,12 @@ unsigned short make_pixel(int r, int g, int b)
 #define AREA_FLAG_2_REV ((Player.pos.y>120) && (Player.pos.y < 360)) ? 1:0
 #define PLY_AREA_FLAG ((Player.pos.x>85) && (Player.pos.x<765) && (Player.pos.y>50) && (Player.pos.y < 420)) ? 1:0
 
+// Collision
 #define CRASH_X(I) ((Bullet.pos.x >= Zombie[(I)].pos.x + (Zombie[(I)].w/3)) && (Bullet.pos.x<= Zombie[(I)].pos.x+(Zombie[(I)].w*2/3))) ? 1:0
 #define CRASH_Y(I) ((Bullet.pos.y >= Zombie[(I)].pos.y + (Zombie[(I)].h/3)) && (Bullet.pos.y<= Zombie[(I)].pos.y+(Zombie[(I)].h*2/3))) ? 1:0
+
+// Zombie
+#define ACCEL(i) (Zombie(i).move_flag ? Zombie(i).speed_step * (i) : 0)
 
 #include "./Image/surgery_480.h"
 #include "./Image/road.h"
@@ -95,6 +99,8 @@ void Draw_Monster(int key);
 void Draw_Bullet(int key);
 void explosion(void);
 void Collision_Detect(void);
+void Monster_Detect(void);
+
 
 void Erase_Map(int x, int y, int w, int h, const unsigned short int *fp);
 
@@ -188,9 +194,16 @@ void Monster_init(void)
 
 	for(i=0;i<N;i++)
 	{
-		Zombie[i].pos.x = LCD_XSIZE + Zombie[i].w;
-		Zombie[i].pos.y = (LCD_YSIZE - Zombie[i].h)/2;
-		Lcd_Draw_Bar(Zombie[i].pos.x, Zombie[i].pos.y, Zombie[i].pos.x+Zombie[i].w, Zombie[i].pos.y+Zombie[i].h, Zombie[i].color);
+		int rand_x = srand() / LCD_XSIZE;
+		int rand_y = srand() / LCD_YSIZE;
+
+		Zombie[i].pos.init_x = rand_x;
+		Zombie[i].pos.init_y = rand_y;
+		Zombie[i].pos.x = Zombie[i].pos.init_x;
+		Zombie[i].pos.y = Zombie[i].pos.init_y;
+		Zombie[i].move_flag = 0;
+
+		Lcd_Draw_Bar(Zombie[i].pos.init_x, Zombie[i].pos.init_y, Zombie[i].pos.init_x +Zombie[i].w, Zombie[i].pos.init_y +Zombie[i].h, Zombie[i].color);
 		//Lcd_Draw_BMP(Player.pos.x, Player.pos.y, man_04);
 	}
 }
@@ -212,12 +225,7 @@ void Move(void)
 		//Collision_Detect(key);
 		Draw_Map(key);
 		Draw_Character(key);
-
-		for(i=0;i<N;i++)
-		{
-			if(Zombie[i].move_flag)
-			Draw_Monster(key);
-		}
+		Draw_Monster(key);
 	}
 
 	return;
@@ -335,23 +343,23 @@ void Draw_Character(int key)
 
 void Draw_Bullet(int key)
 {
+	// init
 	if(key == 5)
 	{
 		Bullet.attack_flag = 1;
 		Bullet.pos.x = Player.pos.x+(Player.w/2);
 		Bullet.pos.y = Player.pos.y;
-		Bullet.speed_step = 50;
+		Bullet.speed_step = 30;
 //		Bullet.pos.x = Bullet.pos.init_x;
 //		Bullet.pos.y = Bullet.pos.init_y;
+
+		Lcd_Set_Shape_Mode(1, 0xFFFE);
+		Lcd_Draw_BMP(Bullet.pos.x, Bullet.pos.y, bullet_01);
+		Lcd_Set_Shape_Mode(0, 0);
 	}
 
-	// init
 	if(Bullet.attack_flag)
 	{
-		Lcd_Set_Shape_Mode(1,0xFFFE);
-		Lcd_Draw_BMP(Bullet.pos.x, Bullet.pos.y, bullet_01);
-		Lcd_Set_Shape_Mode(0,0);
-
 		if(Player.move_flag == 0)
 			Bullet.pos.y -= Bullet.speed_step;
 		else if(Player.move_flag == 1)
@@ -360,6 +368,10 @@ void Draw_Bullet(int key)
 			Bullet.pos.y += Bullet.speed_step;
 		else if(Player.move_flag == 3)
 			Bullet.pos.x -= Bullet.speed_step;
+
+		Lcd_Set_Shape_Mode(1, 0xFFFE);
+		Lcd_Draw_BMP(Bullet.pos.x, Bullet.pos.y, bullet_01);
+		Lcd_Set_Shape_Mode(0, 0);
 
 		Collision_Detect();
 	}
@@ -382,6 +394,18 @@ void explosion(void)
 	 */
 }
 
+void Monster_Detect(void)
+{
+	int i;
+	
+	for (i = 0; i < N; i++)
+	{
+		if (((Player.pos.x - Zombie.pos.x) < 200) && ((Player.pos.y - Zombie.pos.y) < 150))
+		{
+			Zombie[i].move_flag = 1;
+		}
+	}
+}
 
 void Collision_Detect(void)
 {
@@ -418,8 +442,8 @@ void Draw_Monster(int key)
 
 			Zombie[i].pos.old_x = Zombie[i].pos.x;
 			Zombie[i].pos.old_y = Zombie[i].pos.y;
-			Zombie[i].pos.x += dx[key]*Player.speed_step;
-			Zombie[i].pos.y += dy[key]*Player.speed_step;
+			Zombie[i].pos.x += dx[key]*(Player.speed_step + ACCEL(i));
+			Zombie[i].pos.y += dy[key]*(Player.speed_step + ACCEL(i));
 
 
 			//	for(i=0; i<(sizeof(Man)/sizeof(Man[1])); i++)
