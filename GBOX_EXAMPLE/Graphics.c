@@ -655,6 +655,24 @@ void Lcd_Draw_Bar(int x1, int y1, int x2, int y2, int color)
      }
 }
 
+void Lcd_Draw_Bar_2(int x1, int y1, int w, int h, int color)
+{
+     int i, j;
+     int xx1, yy1;
+
+
+	 xx1=x1;
+	 yy1=y1;
+
+     for(i=yy1;i<=yy1+h;i++)
+     {
+         for(j=xx1;j<=xx1+h;j++)
+         {
+             Lcd_Put_Pixel(j,i,color);
+         }
+     }
+}
+
 ///////////////////////// Font Display functions ////////////////////////
 
 static unsigned char _first[]={0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 };

@@ -1,0 +1,37 @@
+#include <stdlib.h>
+
+
+void Call_Map(const unsigned short int *fp, const unsigned short int *map)
+{
+	// fp : ÀüÃ¼ ¸Ê
+	register int xx, yy;
+	register int height = fp[0], width=fp[1];
+
+	for(yy=0;yy<height;yy++)
+	{
+		for(xx=0;xx<width;xx++)
+		{
+			if((Player.pos.x>160)&&(Player.pos.x<320))
+				Lcd_Put_Pixel(xx+x,yy+y,(int)map[yy*width+xx]);
+			else if((Player.pos.x>320)&&(Player.pos.x<480))
+				Lcd_Put_Pixel(xx+x,yy+y,(int)map[yy*width+xx]);
+			else if((Player.pos.x>320)&&(Player.pos.x<480))
+				Lcd_Put_Pixel(xx+x,yy+y,(int)map[yy*width+xx]);
+			//Lcd_Draw_BMP()
+		}
+	}
+}
+
+void Erase_Map(int x, int y, int w, int h, const unsigned short int *fp)
+{
+	register int map_w = fp[0];
+	register int i, j;
+
+	for (i = y; i<y + h; i++)
+	{
+		for (j = x; j<x + w; j++)
+		{
+			Lcd_Put_Pixel(j, i, (int)fp[map_w*i + j + 2]);
+		}
+	}
+}

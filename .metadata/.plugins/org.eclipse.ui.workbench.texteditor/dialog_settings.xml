@@ -3,28 +3,30 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="261" key="DIALOG_WIDTH"/>
 		<item value="137" key="DIALOG_Y_ORIGIN"/>
-		<item value="380" key="DIALOG_HEIGHT"/>
 		<item value="890" key="DIALOG_X_ORIGIN"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="man_04" key="selection"/>
+		<item value="Draw_Bullet" key="selection"/>
 		<list key="findhistory">
-			<item value="man_04"/>
-			<item value="user"/>
-			<item value="main"/>
-			<item value="Graphic_init"/>
-			<item value="Virtual_Display"/>
-			<item value="AREA_FLAG"/>
-			<item value="LCD_SIZE"/>
-			<item value="map_pos"/>
+			<item value="Draw_Bullet"/>
+			<item value="Erase"/>
+			<item value="Bullets"/>
+			<item value="ZB"/>
+			<item value="ZN"/>
+			<item value="escape"/>
+			<item value="Esca"/>
+			<item value="Main"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Bullet[i]"/>
+			<item value="Zombie"/>
 		</list>
 	</section>
 </section>

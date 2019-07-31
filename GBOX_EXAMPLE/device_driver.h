@@ -105,6 +105,7 @@ extern void Lcd_Draw_Hline(int y, int x1, int x2, int color);
 extern void Lcd_Draw_Vline(int x, int y1, int y2, int color);
 extern void Lcd_Draw_Rect(int x1, int y1, int x2, int y2, int color);
 extern void Lcd_Draw_Bar(int x1, int y1, int x2, int y2, int color);
+extern void Lcd_Draw_Bar_2(int x1, int y1, int w, int h, int color);
 
 extern void Lcd_Draw_BMP_File_24bpp(int x, int y, void *fp);
 extern void Lcd_Puts(int x, int y, int color, int bkcolor, char *str, int zx, int zy);
