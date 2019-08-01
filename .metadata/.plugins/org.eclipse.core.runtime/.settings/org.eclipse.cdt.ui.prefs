@@ -1,6 +1,8 @@
-#Mon Jul 29 08:51:16 KST 2019
+#Thu Aug 01 14:40:45 KST 2019
+do_not_ask_to_install_user_dictionary=true
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 content_assist_disabled_computers=org.eclipse.cdt.ui.parserProposalCategory\u0000org.eclipse.cdt.ui.textProposalCategory\u0000
 eclipse.preferences.version=1
+spelling_user_dictionary_encoding=
 useQuickDiffPrefPage=true
