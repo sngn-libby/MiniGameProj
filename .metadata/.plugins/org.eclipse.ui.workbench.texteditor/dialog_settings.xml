@@ -2,37 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="261" key="DIALOG_WIDTH"/>
-		<item value="527" key="DIALOG_Y_ORIGIN"/>
-		<item value="911" key="DIALOG_X_ORIGIN"/>
+		<item value="462" key="DIALOG_Y_ORIGIN"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="725" key="DIALOG_X_ORIGIN"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="//Timer3_Buzzer_Beep" key="selection"/>
+		<item value="" key="selection"/>
 		<list key="findhistory">
+			<item value="//"/>
+			<item value="//Timer3"/>
+			<item value="/"/>
+			<item value="life"/>
+			<item value="Lcd_Set_Address"/>
+			<item value="surgery_480"/>
 			<item value="Timer3_Buzzer_Beep"/>
 			<item value="Bullet.attack_flag = 0"/>
-			<item value="Bullet.attack_flag"/>
-			<item value="Timer0"/>
-			<item value="Attack_Zombie"/>
-			<item value="--Zombie[i].timer"/>
-			<item value=" --Zombie[i].timer"/>
-			<item value="Zombie[i].timer --"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="Timer3"/>
+			<item value="surgery"/>
 			<item value="//Timer3_Buzzer_Beep"/>
 			<item value="Zombie[i].timer == 0"/>
 			<item value="Zombie[i].timer == Zombie[i].time_step"/>
 			<item value="arr_Zombie[(Zombie[i].move_flag * 3 + i)%12]"/>
 			<item value="arr_Zombie[Zombie[i].move_flag * 3 + i]"/>
-			<item value=""/>
-			<item value="300"/>
-			<item value="weapon_mode"/>
 		</list>
 	</section>
 </section>

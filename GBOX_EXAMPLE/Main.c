@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include "device_driver.h"
 #include "2440addr.h"
-//#include "myCharacter.c"
 
 enum key{C1, C1_, D1, D1_, E1, F1, F1_, G1, G1_, A1, A1_, B1, C2, C2_, D2, D2_, E2, F2, F2_, G2, G2_, A2, A2_, B2};
 enum note{N16, N8, N4, N2, N1};
@@ -57,10 +56,6 @@ unsigned short make_pixel(int r, int g, int b)
 
 // available map area condition
 #define AREA_FLAG ((((Player.pos.x>160) && (Player.pos.x<690)) || ((Player.pos.y>120) && (Player.pos.y < 360))) ? 1:0)
-//#define AREA_FLAG_1 (((Player.pos.x>85) && (Player.pos.x<160)) || ((Player.pos.x>690) && (Player.pos.x<765))) ? 1:0
-//#define AREA_FLAG_1_REV ((Player.pos.x>160) && (Player.pos.x<690)) ? 1:0
-//#define AREA_FLAG_2 (((Player.pos.y>50) && (Player.pos.y < 120)) || ((Player.pos.y>360) && (Player.pos.y < 420))) ? 1:0
-//#define AREA_FLAG_2_REV ((Player.pos.y>120) && (Player.pos.y < 360)) ? 1:0
 #define AREA_FLAG_1 (((Player.pos.y>120) && (Player.pos.y<(360-Player.h))) ? 1:0)
 #define AREA_FLAG_2 (((Player.pos.x>160) && (Player.pos.x<(690-Player.w))) ? 1:0)
 #define MAP_AREA_FLAG ((((Player.pos.x>160) && (Player.pos.x<(Back.w - 160 - Player.w))) && ((Player.pos.y>120) && (Player.pos.y < (Back.h - 120 - Player.h)))) ? 1:0 )
@@ -98,8 +93,6 @@ unsigned short make_pixel(int r, int g, int b)
 
 // Bullet
 #define BL_SPEED (6)
-//#define CRASH_X(I) ((Bullet.pos.x >= Zombie[(I)].pos.x) && (Bullet.pos.x<= Zombie[(I)].pos.x+Zombie[(I)].w)) ? 1:0
-//#define CRASH_Y(I) ((Bullet.pos.y >= Zombie[(I)].pos.y) && (Bullet.pos.y<= Zombie[(I)].pos.y+Zombie[(I)].h)) ? 1:0
 
 #include "./Image/bullet_01_0.h"
 #include "./Image/bullet_01_1.h"
@@ -111,7 +104,6 @@ unsigned short make_pixel(int r, int g, int b)
 #include "./Image/flash_01_3.h"
 
 // Zombie
-//#define ACCEL(i) (Zombie[i].move_flag) ? (Zombie[i].speed_step * (i)) : 0
 #define N (3)
 #define DIST (30)
 #define ZB_SPEED (2)
@@ -152,7 +144,6 @@ const unsigned short * Endings[] = {ending_01, ending_02};
 
 /*------------------------------------------------------------------------------*/
 
-//void Game_In(void);
 
 void Game_Init(void);
 void Call_Map(int x, int y, int w, int h, const unsigned short int *fp);
@@ -172,7 +163,6 @@ void explosion(void);
 int Detect_Crash(void);
 void Detect_Zombie(void);
 void Attack_Zombie(void);
-//void Run_Zombie(void);
 
 
 
@@ -267,7 +257,6 @@ void User_Main(void)
 	}
 
 	Game_Init();
-	//Timer0_Repeat(30);
 	for (;;)
 	{
 		Move();
@@ -276,14 +265,6 @@ void User_Main(void)
 
 }
 
-//void Game_In(void)
-//{
-//	Lcd_Clr_Screen(BACK_COLOR);
-//	Timer0_Repeat(500);
-//	Lcd_Draw_BMP(0,0, Cover[0]);
-//	Lcd_Draw_BMP(0,0, Cover[1]);
-//	Key_Wait_Key_Pressed();
-//}
 
 
 
@@ -313,10 +294,8 @@ void Map_init(void)
 	Back.h = Maps[Back.map_num][1];
 
 	Lcd_Draw_BMP(Back.pos.init_x,Back.pos.init_y, Maps[Back.map_num]);
-	//Call_Map(Back.pos.y,Back.pos.y,Back.w,Back.h,Maps[Back.map_num]);
 	Lcd_Set_Virtual_Display_Start(Back.pos.init_x, Back.pos.init_y);
 
-	//Timer4_Delay(1000);
 }
 
 
@@ -363,14 +342,6 @@ void Zombie_init(void)
 
 		Zombie[i].pos.init_x = (Zombie[i].pos.init_x <= 85? Zombie[i].pos.init_x: 100);
 		Zombie[i].pos.init_y = (Zombie[i].pos.init_y <= 50? Zombie[i].pos.init_y: 100);
-
-//		Lcd_Set_Shape_Mode(1, 0xFFFE);
-//
-//		Lcd_Draw_BMP(Zombie[i].pos.init_x, Zombie[i].pos.init_y, arr_Zombie[(Zombie[i].move_flag * 3 + i)%12]);
-//		Lcd_Set_Shape_Mode(0, 0);
-
-		// 디버깅
-		printf("ZB %d init : %d %d\n", i, Zombie[i].pos.init_x, Zombie[i].pos.init_y);
 	}
 }
 
@@ -391,7 +362,6 @@ void Move(void)
 		{
 			Player.timer ++;
 
-			//Detect_Crash();
 			Move_Map(key);
 			Move_Player(key);
 			Draw_Map(key);
@@ -458,7 +428,6 @@ void Move_Map(int key)
 	int dy[] = { -1, 0, 1, 0 };
 	int dx[] = { 0, -1, 0, 1 };
 
-	// TODO_2
 	if ((Player.pos.x>460) && (Player.pos.x <= 463) && (Player.move_flag == 3))
 	{
 		Call_Map(Back.pos.x, 0, Back.w - Back.pos.x, Back.h, Maps[Back.map_num]);
@@ -468,7 +437,6 @@ void Move_Map(int key)
 		Lcd_Draw_BMP(0, 0, Maps[Back.map_num]);
 	}
 
-	// 구역별 맵 움직임 제어 // 딱 맞음
 	Back.pos.old_x = Back.pos.x;
 	Back.pos.old_y = Back.pos.y;
 
@@ -476,9 +444,6 @@ void Move_Map(int key)
 	{
 		if (MAP_AREA_FLAG)
 		{
-			// 디버깅
-			printf("	area3\n");
-
 			Back.pos.x += dx[key] * Player.speed_step;
 			Back.pos.y += dy[key] * Player.speed_step;
 
@@ -490,9 +455,6 @@ void Move_Map(int key)
 		}
 		else if (AREA_FLAG_1 && (!AREA_FLAG_2))
 		{
-			// 디버깅
-			printf("	area1\n");
-
 			Back.pos.y += dy[key] * Player.speed_step;
 
 			Back.pos.x = Back.pos.x>0 ? Back.pos.x : Back.pos.old_x;
@@ -500,8 +462,7 @@ void Move_Map(int key)
 		}
 		else if (AREA_FLAG_2 && (!AREA_FLAG_1))
 		{
-			// 디버깅
-			printf("	area2\n");
+
 
 			Back.pos.x += dx[key] * Player.speed_step;
 
@@ -510,8 +471,7 @@ void Move_Map(int key)
 		}
 		else
 		{
-			// 디버깅
-			printf("	area0\n");
+
 
 			Back.pos.x = Back.pos.old_x;
 			Back.pos.y = Back.pos.old_y;
@@ -557,9 +517,6 @@ void Move_Player(int key)
 		Player.pos.old_x = Player.pos.x;
 		Player.pos.old_y = Player.pos.y;
 
-		// 디버깅
-		//printf("정상진입\n"); // 정상작동
-
 		Player.pos.x += dx[key] * Player.speed_step;
 		Player.pos.y += dy[key] * Player.speed_step;
 
@@ -568,8 +525,6 @@ void Move_Player(int key)
 	}
 	else if (key<4)
 	{
-		// 디버깅
-		printf("PLY out of range\n");
 
 		Player.pos.x = Player.pos.old_x;
 		Player.pos.y = Player.pos.old_y;
@@ -605,37 +560,27 @@ void Move_Bullet(int key)
 		Bullet.speed_step = BL_SPEED;
 		Bullet.timer = 0;
 
-		//Timer3_Buzzer_Beep(C2,N16);
+		Timer3_Buzzer_Beep(C2,N16);
 
 		if (dir==0)
 		{
 			Bullet.pos.init_x = Player.pos.x + Player.w/3 + Bullet.w;
 			Bullet.pos.init_y = Player.pos.y - 2*Bullet.h/3;
-
-
-//			Bullet.pos.init_x = Player.pos.x + Player.w/2 - Bullet.w;
-//			Bullet.pos.init_y = Player.pos.y - Bullet.h;
 		}
 		else if (dir==1)
 		{
 			Bullet.pos.init_x = Player.pos.x - 2*Bullet.h/3;
 			Bullet.pos.init_y = Player.pos.y - 2*Bullet.h;
-//			Bullet.pos.init_x = Player.pos.x - Bullet.w;
-//			Bullet.pos.init_y = Player.pos.y - Player.w/2;
 		}
 		else if (dir==2)
 		{
 			Bullet.pos.init_x = Player.pos.x - Bullet.w;
 			Bullet.pos.init_y = Player.pos.y + Player.h + Bullet.h;
-//			Bullet.pos.init_x = Player.pos.x + Player.w/2 - Bullet.w;
-//			Bullet.pos.init_y = Player.pos.y + Player.h + Bullet.h;
 		}
 		else if (dir==3)
 		{
 			Bullet.pos.init_x = Player.pos.x + Player.w + Bullet.w/2;
 			Bullet.pos.init_y = Player.pos.y + Player.h - 3*Bullet.h;
-//			Bullet.pos.init_x = Player.pos.x + Player.h + Bullet.w;
-//			Bullet.pos.init_y = Player.pos.y + Player.w/2;
 		}
 
 		Flash.w = Flashes[Player.move_flag][0];
@@ -657,14 +602,12 @@ void Move_Bullet(int key)
 
 		if (Detect_Crash()) // 벽 or 좀비 맞았을 때
 		{
-			//Timer3_Buzzer_Beep(C1_,N16);
+			Timer3_Buzzer_Beep(C1_,N16);
 
 			Bullet.pos.old_x = Bullet.pos.x;
 			Bullet.pos.old_y = Bullet.pos.y;
 			// explosion 지우기
 			Erase_Map(Bullet.pos.init_x, Bullet.pos.init_y, Bullet.w, Bullet.h, Maps[Back.map_num]);
-			// 좀비 맞은거 지우기
-			//Erase_Map(Bullet.pos.old_x, Bullet.pos.old_y, Bullet.w, Bullet.h, Maps[Back.map_num]);
 
 			break;
 		}
@@ -691,19 +634,6 @@ void Move_Bullet(int key)
 
 		cnt_1 --;
 	}
-	// WEAPON MODE : 유도탄
-	else if (Bullet.weapon_mode % 3 == 2)
-	{
-		//		int i;
-		//
-		//		Bullet.pos.x - .pos.x
-		//		for(i=0;;i++)
-		//		{
-		//			Bullet.pos.x += ((Player.pos.x<Bullet.pos.x)? (Bullet.pos.x - Player.pos.x)*i/3 : (Player.pos.x - Bullet.pos.x)*i/3 );
-		//			Bullet.pos.old_x = Bullet.pos.x;
-		//			Bullet.pos.old_y = Bullet.pos.y;
-		//		}
-	}
 }
 
 
@@ -716,13 +646,6 @@ int Detect_Crash(void)
 		// 벽
 		if (!(AREA_CHECK_X(Bullet)) || !(AREA_CHECK_Y(Bullet)))
 		{
-			// 디버깅
-			// printf("Wall ");
-
-			//Lcd_Set_Shape_Mode(1, BLACK);
-//			Lcd_Set_Shape_Mode(1, 0xFFFC);
-//			Lcd_Draw_BMP(Bullet.pos.old_x, Bullet.pos.old_y, flash_02);
-//			Lcd_Set_Shape_Mode(0,0);
 			Bullet.attack_flag = 0;
 
 			return 1;
@@ -736,12 +659,8 @@ int Detect_Crash(void)
 				// 생명 0일 때 소멸 (Move_Zombie에서 위치업데이트 없음)
 				if (Zombie[i].life_flag == 0)
 				{
-					// 디버깅
-					printf("%d Zombie die ", i); // 정상작동
 
-					//Timer3_Buzzer_Beep(D1,N16);
-
-					//Erase_Map(Zombie[i].pos.old_x, Zombie[i].pos.old_y-2*Zombie[i].h, Zombie[i].w, Zombie[i].h, Maps[Back.map_num]);
+					Timer3_Buzzer_Beep(D1,N16);
 					Erase_Map(Zombie[i].pos.x, Zombie[i].pos.y-Zombie[i].h, Zombie[i].w, 2*Zombie[i].h, Maps[Back.map_num]);
 					ZB_KILL--;
 					Bullet.attack_flag = 0;
@@ -765,15 +684,12 @@ int Detect_Crash(void)
 						&& (Flash.pos.init_x + Player.w/2 > Zombie[i].pos.x+Zombie[i].w/2)\
 						&& (Flash.pos.init_y + Player.h > Zombie[i].pos.y))
 				{
-					// 디버깅
-					printf("Shot!!!! %d\n", i);
-
 					--Zombie[i].life_flag;
 					Zombie[i].pos.y -= 30;
 					Zombie[i].pos.y = Zombie[i].pos.y>0 ? Zombie[i].pos.y: Zombie[i].pos.y+30;
 					Bullet.attack_flag = 0;
 
-					//Timer3_Buzzer_Beep(C1,N16);
+					Timer3_Buzzer_Beep(C1,N16);
 
 					// 좀비 맞은거 표시
 					Lcd_Set_Shape_Mode(1, WHITE);
@@ -795,7 +711,7 @@ int Detect_Crash(void)
 					Zombie[i].pos.x = Zombie[i].pos.x>0 ? Zombie[i].pos.x : Zombie[i].pos.x+30;
 					Bullet.attack_flag = 0;
 
-					//Timer3_Buzzer_Beep(C1,N16);
+					Timer3_Buzzer_Beep(C1,N16);
 
 					// 좀비 맞은거 표시
 					Lcd_Set_Shape_Mode(1, WHITE);
@@ -817,7 +733,7 @@ int Detect_Crash(void)
 					Zombie[i].pos.y = Zombie[i].pos.y>0 ? Zombie[i].pos.y: Zombie[i].pos.y-30;
 					Bullet.attack_flag = 0;
 
-					//Timer3_Buzzer_Beep(C1,N16);
+					Timer3_Buzzer_Beep(C1,N16);
 
 					// 좀비 맞은거 표시
 					Lcd_Set_Shape_Mode(1, WHITE);
@@ -839,7 +755,7 @@ int Detect_Crash(void)
 					Zombie[i].pos.x = Zombie[i].pos.x>0 ? Zombie[i].pos.x : Zombie[i].pos.x-30;
 					Bullet.attack_flag = 0;
 
-					//Timer3_Buzzer_Beep(C1,N16);
+					Timer3_Buzzer_Beep(C1,N16);
 
 					// 좀비 맞은거 표시
 					Lcd_Set_Shape_Mode(1, WHITE);
@@ -885,13 +801,8 @@ void Detect_Zombie(void)
 			// Control time
 			if ((ABS(Player.pos.x - Zombie[i].pos.x) < DIST) && (ABS(Player.pos.y - Zombie[i].pos.y) < DIST))
 			{
-				//Uart_Printf("Detect_Zombie!\n"); // 정상작동
 				Zombie[i].speed_step = Zombie[i].speed_step*(i*3);
 				Zombie[i].attack_flag = 0;
-
-				// 디버그
-				Uart_Printf("ZB#%d : %d %d\n", i, Zombie[i].pos.x,Zombie[i].pos.y);
-
 			}
 			if ((ABS(Player.pos.x - Zombie[i].pos.x) <= 50) && (ABS(Player.pos.y - Zombie[i].pos.y) <= 50))
 			{
@@ -904,10 +815,6 @@ void Detect_Zombie(void)
 				Zombie[i].speed_step = ZB_SPEED;
 				Zombie[i].attack_flag = 0;
 			}
-
-			// 디버깅
-			if(Zombie[i].attack_flag)
-				printf("ZB %d is ATTACK", i);
 		}
 	}
 }
@@ -985,24 +892,9 @@ void Move_Zombie(void)
 					Zombie[i].pos.y -= Zombie[i].speed_step;
 				}
 			}
-
-//			if(Zombie[i].pos.y < Player.pos.y)
-//			{
-//				Zombie[i].move_flag = 2;
-//				Zombie[i].pos.y += Zombie[i].speed_step;
-//			}
-//			else if (Zombie[i].pos.y == Player.pos.y)
-//			{
-//				Zombie[i].move_flag = Zombie[i].pos.x < Player.pos.x ? 3:1;
-//			}
-//			else
-//			{
-//				Zombie[i].move_flag = 0;
-//				Zombie[i].pos.y -= Zombie[i].speed_step;
-//			}
 		}
 
-		else if ((Zombie[i].timer == 0) && (Zombie[i].life_flag>0))  // 조건
+		else if ((Zombie[i].timer == 0) && (Zombie[i].life_flag>0))
 		{
 			Zombie[i].pos.x = Zombie[i].pos.old_x;
 			Zombie[i].pos.y = Zombie[i].pos.old_y;
@@ -1026,7 +918,7 @@ void Attack_Zombie(void)
 
 			Zombie[i].attack_flag = 0;
 			Player.life_flag--;
-			//Timer3_Buzzer_Beep(C2_,N16);
+			Timer3_Buzzer_Beep(C2_,N16);
 
 			Lcd_Set_Shape_Mode(1, 0xFFFE);
 			Lcd_Draw_BMP(Player.pos.x-blood_01[0]/2, Player.pos.y-blood_01[1]/2, palm_01);
@@ -1036,7 +928,6 @@ void Attack_Zombie(void)
 		}
 	}
 }
-// TODO_1
 void Draw_Zombie(void)
 {
 	int i;
@@ -1056,20 +947,18 @@ void Draw_Zombie(void)
 
 int Count_Zombie(void)
 {
-	if(Timer0_Check_Expired())
-	{
-		Erase_Map(Back.pos.old_x, Back.pos.old_y, 120, 80, Maps[Back.map_num]);
 
-		Lcd_Set_Shape_Mode(1, BLACK);
-		Lcd_Printf(Back.pos.x + 10,Back.pos.y+10,RED,BLACK, 1,1, "LIFE   %d", Player.life_flag);
-		Lcd_Printf(Back.pos.x + 10,Back.pos.y+25,WHITE,BLACK, 1,1, "REMAIN %d", ZB_KILL);
-		Lcd_Set_Shape_Mode(0, 0);
-	}
+	Erase_Map(Back.pos.old_x, Back.pos.old_y, 120, 80, Maps[Back.map_num]);
+
+	Lcd_Set_Shape_Mode(1, BLACK);
+	Lcd_Printf(Back.pos.x + 10,Back.pos.y+10,RED,BLACK, 1,1, "LIFE   %d", Player.life_flag);
+	Lcd_Printf(Back.pos.x + 10,Back.pos.y+25,WHITE,BLACK, 1,1, "REMAIN %d", ZB_KILL);
+	Lcd_Set_Shape_Mode(0, 0);
 
 	if (ZB_KILL == 0)
 	{
 		Game_Out(1); // WIN
-		return 1; // 우선은 --> 추후 다음스테이지로 넘어가게 수정
+		return 1;
 	}
 
 	else if (Player.life_flag <= 0)
@@ -1094,7 +983,6 @@ int Game_Out(int ver)
 		Lcd_Clr_Screen(BACK_COLOR);
 		Lcd_Draw_BMP(0, 0, Endings[ver]);
 		Lcd_Set_Virtual_Display_Start(0,0);
-		//Lcd_Draw_BMP(Back.pos.x, Back.pos.y, Endings[ver]);
 
 		Key_Wait_Key_Pressed();
 
@@ -1113,7 +1001,6 @@ int Game_Out(int ver)
 		Timer4_Delay(5000);
 		Lcd_Clr_Screen(BACK_COLOR);
 		Lcd_Set_Shape_Mode(1, 0xFFFE);
-		//Lcd_Draw_BMP(Back.pos.x, Back.pos.y, Endings[ver]);
 		Lcd_Draw_BMP(0, 0, Endings[ver]);
 		Lcd_Set_Virtual_Display_Start(0,0);
 		Lcd_Set_Shape_Mode(0,0);
