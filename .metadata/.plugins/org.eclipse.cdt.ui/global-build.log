@@ -17,3 +17,1026 @@ make all
 "C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
 
 **** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:709: error: lvalue required as decrement operand
+make: *** [Adc.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:724: error: request for member 'pos' in something not a structure or union
+Main.c:724: error: request for member 'pos' in something not a structure or union
+make: *** [Adc.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:782: warning: multi-line comment
+Main.c:799: warning: multi-line comment
+Main.c:814: warning: multi-line comment
+Main.c:829: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:782: warning: multi-line comment
+Main.c:799: warning: multi-line comment
+Main.c:814: warning: multi-line comment
+Main.c:829: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:783: warning: multi-line comment
+Main.c:800: warning: multi-line comment
+Main.c:815: warning: multi-line comment
+Main.c:830: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:784: warning: multi-line comment
+Main.c:801: warning: multi-line comment
+Main.c:816: warning: multi-line comment
+Main.c:831: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:784: warning: multi-line comment
+Main.c:801: warning: multi-line comment
+Main.c:816: warning: multi-line comment
+Main.c:831: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:806: warning: multi-line comment
+Main.c:865: warning: multi-line comment
+Main.c:882: warning: multi-line comment
+Main.c:897: warning: multi-line comment
+Main.c:912: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:809: warning: multi-line comment
+Main.c:868: warning: multi-line comment
+Main.c:885: warning: multi-line comment
+Main.c:900: warning: multi-line comment
+Main.c:915: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:812: warning: multi-line comment
+Main.c:871: warning: multi-line comment
+Main.c:888: warning: multi-line comment
+Main.c:903: warning: multi-line comment
+Main.c:918: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:820: warning: multi-line comment
+Main.c:879: warning: multi-line comment
+Main.c:896: warning: multi-line comment
+Main.c:911: warning: multi-line comment
+Main.c:926: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:828: warning: multi-line comment
+Main.c:887: warning: multi-line comment
+Main.c:904: warning: multi-line comment
+Main.c:919: warning: multi-line comment
+Main.c:934: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:828: warning: multi-line comment
+Main.c:887: warning: multi-line comment
+Main.c:904: warning: multi-line comment
+Main.c:919: warning: multi-line comment
+Main.c:934: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:828: warning: multi-line comment
+Main.c:887: warning: multi-line comment
+Main.c:904: warning: multi-line comment
+Main.c:919: warning: multi-line comment
+Main.c:934: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:831: warning: multi-line comment
+Main.c:890: warning: multi-line comment
+Main.c:907: warning: multi-line comment
+Main.c:922: warning: multi-line comment
+Main.c:937: warning: multi-line comment
+Main.c: In function 'Game_Out':
+Main.c:1156: warning: statement with no effect
+Main.c:1156: error: expected ';' before 'Erase_Map'
+make: *** [Adc.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:831: warning: multi-line comment
+Main.c:890: warning: multi-line comment
+Main.c:907: warning: multi-line comment
+Main.c:922: warning: multi-line comment
+Main.c:937: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:833: warning: multi-line comment
+Main.c:892: warning: multi-line comment
+Main.c:909: warning: multi-line comment
+Main.c:924: warning: multi-line comment
+Main.c:939: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:833: warning: multi-line comment
+Main.c:892: warning: multi-line comment
+Main.c:909: warning: multi-line comment
+Main.c:924: warning: multi-line comment
+Main.c:939: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:833: warning: multi-line comment
+Main.c:892: warning: multi-line comment
+Main.c:909: warning: multi-line comment
+Main.c:924: warning: multi-line comment
+Main.c:939: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:833: warning: multi-line comment
+Main.c:892: warning: multi-line comment
+Main.c:909: warning: multi-line comment
+Main.c:924: warning: multi-line comment
+Main.c:939: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:837: warning: multi-line comment
+Main.c:896: warning: multi-line comment
+Main.c:913: warning: multi-line comment
+Main.c:928: warning: multi-line comment
+Main.c:943: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:837: warning: multi-line comment
+Main.c:896: warning: multi-line comment
+Main.c:913: warning: multi-line comment
+Main.c:928: warning: multi-line comment
+Main.c:943: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:837: warning: multi-line comment
+Main.c:896: warning: multi-line comment
+Main.c:913: warning: multi-line comment
+Main.c:928: warning: multi-line comment
+Main.c:943: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:837: warning: multi-line comment
+Main.c:896: warning: multi-line comment
+Main.c:913: warning: multi-line comment
+Main.c:928: warning: multi-line comment
+Main.c:943: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:837: warning: multi-line comment
+Main.c:896: warning: multi-line comment
+Main.c:913: warning: multi-line comment
+Main.c:928: warning: multi-line comment
+Main.c:943: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:837: warning: multi-line comment
+Main.c:896: warning: multi-line comment
+Main.c:913: warning: multi-line comment
+Main.c:928: warning: multi-line comment
+Main.c:943: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:837: warning: multi-line comment
+Main.c:896: warning: multi-line comment
+Main.c:913: warning: multi-line comment
+Main.c:928: warning: multi-line comment
+Main.c:943: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:837: warning: multi-line comment
+Main.c:896: warning: multi-line comment
+Main.c:913: warning: multi-line comment
+Main.c:928: warning: multi-line comment
+Main.c:943: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:839: warning: multi-line comment
+Main.c:898: warning: multi-line comment
+Main.c:915: warning: multi-line comment
+Main.c:930: warning: multi-line comment
+Main.c:945: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:839: warning: multi-line comment
+Main.c:898: warning: multi-line comment
+Main.c:915: warning: multi-line comment
+Main.c:930: warning: multi-line comment
+Main.c:945: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:834: warning: multi-line comment
+Main.c:893: warning: multi-line comment
+Main.c:910: warning: multi-line comment
+Main.c:925: warning: multi-line comment
+Main.c:940: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:836: warning: multi-line comment
+Main.c:895: warning: multi-line comment
+Main.c:912: warning: multi-line comment
+Main.c:927: warning: multi-line comment
+Main.c:942: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:836: warning: multi-line comment
+Main.c:895: warning: multi-line comment
+Main.c:912: warning: multi-line comment
+Main.c:927: warning: multi-line comment
+Main.c:942: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:836: warning: multi-line comment
+Main.c:895: warning: multi-line comment
+Main.c:912: warning: multi-line comment
+Main.c:927: warning: multi-line comment
+Main.c:942: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:832: warning: multi-line comment
+Main.c:891: warning: multi-line comment
+Main.c:908: warning: multi-line comment
+Main.c:923: warning: multi-line comment
+Main.c:938: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Detect_Crash':
+Main.c:832: warning: multi-line comment
+Main.c:891: warning: multi-line comment
+Main.c:908: warning: multi-line comment
+Main.c:923: warning: multi-line comment
+Main.c:938: warning: multi-line comment
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Zombie_init':
+Main.c:336: warning: unused variable 'temp_y'
+Main.c:336: warning: unused variable 'temp_x'
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Count_Zombie':
+Main.c:1007: warning: passing argument 7 of 'Lcd_Printf' makes pointer from integer without a cast
+device_driver.h:112: note: expected 'char *' but argument is of type 'int'
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Main':
+Main.c:244: error: expected ';' before '}' token
+Main.c: In function 'User_Main':
+Main.c:280: error: too few arguments to function 'Game_Out'
+make: *** [Adc.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+Main.c: In function 'Main':
+Main.c:244: error: expected ';' before '}' token
+make: *** [Adc.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
+
+**** Build of configuration Default for project GBOX_EXAMPLE ****
+
+make all 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-gcc" 2440slib.s crt0.s Adc.c Buzzer.c Exception.c Graphics.c Key.c Led.c Main.c Timer.c Uart.c Wdt.c backup_main.c game_map.c mmu.c myCharacter.c runtime.c -nostdinc  -I. -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/include" -I "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1/include"  -mcpu=arm920t -c -Wall -mfloat-abi=soft -fno-builtin -funsigned-char  -ftree-vectorize -ftree-vectorizer-verbose=0 -fno-strict-aliasing -fno-common -pipe -mapcs 
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-ld" Adc.o Buzzer.o Exception.o Graphics.o Key.o Led.o Main.o Timer.o Uart.o Wdt.o backup_main.o game_map.o mmu.o myCharacter.o runtime.o 2440slib.o crt0.o -o dram_0x30000000.axf --cref -Bstatic -nostdlib -p -EL -Map dram_0x30000000.map -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/arm-none-eabi/lib" -L "C:\Program Files\CodeSourcery\Sourcery G++ Lite/lib/gcc/arm-none-eabi/4.4.1" -lc -lgcc -T dram_0x30000000.lds
+"C:\Program Files\CodeSourcery\Sourcery G++ Lite/bin/arm-none-eabi-objcopy" dram_0x30000000.axf dram_0x30000000.bin -O binary
+
+**** Build Finished ****
