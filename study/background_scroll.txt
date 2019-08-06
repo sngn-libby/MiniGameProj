@@ -1,0 +1,49 @@
+// LAYER_MODE 사용
+// BUFFER는 0번만 사용할 것
+void My_Main(void)
+{
+	int xtmp, ytmp;
+	int imgno = 0;
+	int xpos, ypos;
+	int backTimer = 0;
+	unsigned short * back [] = {heart, christmasLong, heart, christmasLong};
+	int backLen = sizeof(back)/ sizeof(back[0]);
+
+	Lcd_Clr_Screen(BLACK);
+	Lcd_Select_Buffer_Mode(LAYER_MODE);
+	Lcd_Get_Info_BMP(&xtmp, &ytmp, heart);
+	Uart_Printf("X=[%d], Y=[%d]\n", xtmp, ytmp);
+
+	Lcd_Select_Draw_Frame_Buffer(0);
+	Lcd_Select_Display_Frame_Buffer(0);
+	Lcd_Draw_BMP(0, 0, back[0]);
+
+	Timer4_Delay(1000);
+
+	Timer0_Repeat(100);
+	xpos = 0; ypos = 0;
+
+	for(;;){
+		if (Timer0_Check_Expired())
+		{
+			backTimer++;
+		}
+		if (backTimer == 5) {
+			backTimer = 0;
+
+			if (ypos >= 740)
+			{
+				ypos = 0;
+				imgno = (imgno+1) % backLen;
+				Uart_Printf("A xpos = %d, ypos = %d, imgno = %d\n", 0, 0, imgno);
+				Lcd_Set_Virtual_Display_Start(0, 0);
+				Lcd_Draw_BMP(0, 0, back[imgno]);
+			}
+			if (ypos > 0) {
+				Uart_Printf("B xpos = %d, ypos = %d\n", 0, ypos);
+				Lcd_Set_Virtual_Display_Start(0, ypos);
+			}
+			ypos += 20;
+		}
+	}
+}

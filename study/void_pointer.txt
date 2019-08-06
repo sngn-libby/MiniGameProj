@@ -1,0 +1,22 @@
+typedef struct st_p {
+	int a;
+	int b;
+}P;
+
+typedef struct st_m {
+	int a;
+	int c;
+}M;
+
+enum {PLAYER, MONSTER}
+void func(void * x, int type)
+{
+	if (type == PLAYER)
+	{
+		P * rX = (P*)x;
+		if (rX->a) rX->b = 100;
+	}
+	else {
+		M * rX = (M*)x;
+	}
+}

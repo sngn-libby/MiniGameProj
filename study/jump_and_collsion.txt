@@ -1,0 +1,22 @@
+#define jump_step 5
+
+int aa[] = {-40, -15, -5, 5, 15, 40}
+
+pos[y] -= aa[k] * jump_step;
+
+if (k >= 3 && Ãæµ¹) k = 2;
+
+
+if(k == 0)
+{
+	if(search_below() )
+	{
+		k--;
+		jump_flag = 0;
+	}
+}
+else
+{
+	k--;
+	jump_flag = 0;
+}

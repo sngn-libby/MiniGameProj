@@ -1,0 +1,11 @@
+typedef struct _rect {
+	int x1, y1;
+	int x2, y2;
+}RECT;
+
+RECT dr = (RECT) {daram.pos[0], daram.pos[1], daram.pos[0] + daram.size[0], daram.pos[1] + dram.size[1] };
+RECT bl = (RECT) {balpan.pos[0], daram.pos[1], daram.pos[0] + daram.size[0], daram.pos[1] + dram.size[1] };
+
+if (detect(dr, br)==1) {
+	daram.pos[1] = balpan.pos[1] - darm.size[1];
+}

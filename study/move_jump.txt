@@ -1,0 +1,64 @@
+pos[2];
+pos[0] = x
+pos[1] = y
+
+1) typedef struct{
+	int x, y;
+} position;
+
+position pos;
+pos.x pos.y
+
+2) enum position{x = 0, y};
+pos[x] pos[y]
+
+============================================
+
+key = get_key_pressed();
+switch(key)
+
+
+int dy[] = {-1, 0, 1, 0};
+int dx[] = {0, -1, 0, 1};
+
+for (i = x; i <= y; ++i) { 
+	old_pos[i] = pos[i];
+}
+pos[x] += dx[key] * move_step;
+pos[y] += dy[key] * move_step;
+
+============================================
+
+1) 그림이 배경
+
+	i ) 그냥 다 그려버린다
+
+	ii ) 함수를 짠다
+
+	iii ) 그림을 분할해서 조립
+
+2) 배경은 단색에 여러가지 추가 - 편하다
+
+draw(pos[x] - dx[key] * move_step, blabla)
+
+
+=============================================
+pos[x] += dx[key] * move_step;
+
+if(pos[x] < 0) roll_back();
+
+if(collison_detection(key) ) roll_back();
+
+
+=============================================
+
+#define jump_step 5
+
+int aa[] = {5, 15, 25, 35, 45, 55, 65}
+
+pos[y] -= aa[k] * jump_step;
+pos[y] += aa[k] * jump_step;
+
+
+==============================================
+
